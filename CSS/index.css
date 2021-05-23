@@ -7,7 +7,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  font-family: "MBCorpo Text", 'DaimlerCS-Regular', Helvetica,Arial,sans-serif;
+  /* font-family: "MBCorpo Text", 'DaimlerCS-Regular', Helvetica,Arial,sans-serif; */
 }
 
 .object-fit-cover {
