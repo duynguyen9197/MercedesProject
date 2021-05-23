@@ -4,19 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MercedesProject</title>
+    <!-- favicon -->
+    <link rel="shortcut icon"
+      href="https://assets.oneweb.mercedes-benz.com/global/1.9.0/favicon/favicon-32x32.png"
+      type="image/x-icon">
+
+    <title>Mercedes-Benz International: News, Pictures, Videos & Livestreams.</title>
+    <!-- font -->
+    <link as="font" crossorigin=""
+      href="https://assets.oneweb.mercedes-benz.com/plugin/workbench/fonts/1.4.0/WOFF2/MBCorpoATitleCond-Regular-Web.woff2"
+      rel="preload" type="font/woff2">
+    <link as="font" crossorigin=""
+      href="https://assets.oneweb.mercedes-benz.com/plugin/workbench/fonts/1.4.0/WOFF2/MBCorpoSText-Regular-Web.woff2"
+      rel="preload" type="font/woff2">
+
+
     <!-- BS4 CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
-    />
+      />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+      />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="/CSS/index.css" />
   </head>
@@ -39,20 +55,226 @@
     <!-- ChannelBox End -->
     <!-- Lê Huỳnh Quí -->
     <!-- BS4 script -->
+
+    <section class="gird">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="new-tab" data-toggle="tab"
+            href="#new" role="tab" aria-controls="new" aria-selected="true">New</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="popular-tab" data-toggle="tab"
+            href="#popular" role="tab" aria-controls="popular"
+            aria-selected="false">Popular</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="video-tab" data-toggle="tab"
+            href="#video" role="tab" aria-controls="video"
+            aria-selected="false">Videos</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="new" role="tabpanel"
+          aria-labelledby="new-tab">
+          <div class="gird__list">
+            <div class="gird__item m-min item-1 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/Studio-Odeonsplatz-Interactive-Intelligence-Mercedes-Benz-MBUX-2-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Studio Odeonsplatz by Mercedes-Benz.</h4>
+                <p class="size-14">Discover our unique Brand Experience Space in the heart of
+                  Munich.</p>
+              </div>
+            </div>
+            <div class="gird__item m-min item-2 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-gle-2020-v167-styling-and-features-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new GLE – Styling and features.</h4>
+                <p class="size-14">In this video, highlights such as the MBUX and the new
+                  suspension of the new GLE are highlighted.</p>
+              </div>
+            </div>
+            <div class="gird__item m-min item-3 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/01-mercedes-benz-museum-33-extras-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The “33 Extras” at the Mercedes-Benz Museum.</h4>
+                <p class="size-14">The “33 Extras” are a special feature: they bring automobile
+                  history and automotive culture to life with ex...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-s-class-w223-2020-and-its-functions-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new S-Class and its functions.</h4>
+                <p class="size-14">The S-Class stands for legendary as well as traditional engineering. It defines the luxury segment in the a...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-amg-inside-amg-series-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">INSIDE AMG.</h4>
+                <p class="size-14">In our new video series, INSIDE AMG, Product Manager Felix Schönhofer meets talented Mercedes-AMG experts.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-concept-eqt-by-mercedes-eq-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Concept EQT.</h4>
+                <p class="size-14">Mercedes-Benz Vans expands its product portfolio for families and fans of sports and other recreational act...</p>
+              </div>
+            </div>
+
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/Mercedes-Benz-EQ-Formula_E_Team_santiago_teserjpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-EQ Formula E Team</h4>
+                <p class="size-14">Welcome to the Mercedes-EQ Formula E Team. Discover all about racing and our drive for lifestyle, sustainab...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-eq-formula-e-team-monaco-review-16-9_V4jpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Setback in the streets of the Principality</h4>
+                <p class="size-14">Motorsport is characterised by highs and lows, and this was especially apparent on Saturday in an extremely...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-strategic-partnership-for-sustainable-automotive-production-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz & Siemens launch partnership.</h4>
+                <p class="size-14">Mercedes-Benz and Siemens plan to cooperate on advancing digitalisation and automation in the automotive in...</p>
+              </div>
+            </div>
+
+            <!-- //////////////////// -->
+            <div class="gird__item m-min item-10 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/Mercedes-Benz_EQ_Silver_Arrow_02_M3_P3_16-9jpeg.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-EQ Silver Arrow 02</h4>
+                <p class="size-14">Performance meets design: Mercedes-EQ Silver Arrow 02 is our race car for the ABB FIA Formula E Season 7.</p>
+              </div>
+            </div>
+            <div class="gird__item m-min item-11 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-art-and-creativity-with-mercedes-benz-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Art and creativity with Mercedes-Benz.</h4>
+                <p class="size-14">Mercedes-Benz’s global fashion engagement is championed by a self-imposed commitment to support emerging ta...</p>
+              </div>
+            </div>
+            <div class="gird__item m-min item-12 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-we-drive-the-city-mercedes-eq-formula-e-team-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">We Drive the City: Mercedes-EQ Formula E Team.</h4>
+                <p class="size-14">Electrifying innovation knows no bounds: with #WeDriveTheCity​, we want to inspire change for society.</p>
+              </div>
+            </div>
+
+
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-eq-formula-e-team_preview_monaco_V0_16-9jpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The Team heads to the streets of Monaco for the first time</h4>
+                <p class="size-14">The fourth race weekend of the 2020/21 ABB FIA Formula E World Championship will take place on the legendar...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-florian-ambrosius-test-drives-the-new-s-class-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new S-Class – Presented by Florian Ambrosius.</h4>
+                <p class="size-14">Have a look at how the new S-Class will redefine your concept of high-end technology and comfort.</p>
+              </div>
+            </div>
+
+            <!-- HIDE -->
+            <div class="show-more-content d-none">
+              <div class="gird__item m-min position-relative overflow-hidden">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="./images/00-the-perfect-fit-your-mercedes-benz-and-mercedes-me-2560x1440.webp"
+                  alt="">
+                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                  <h4 class="size-20 font-weight-light">The perfect fit: Your Mercedes-Benz & Mercedes me.</h4>
+                  <p class="size-14">Some things just work perfectly together. Like your Mercedes-Benz and the digital services of Mercedes me.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="showMore">Show more</button>
+          </div>
+        </div>
+
+
+
+        <div class="tab-pane fade" id="popular" role="tabpanel"
+          aria-labelledby="popular-tab">Popular</div>
+
+
+
+        <div class="tab-pane fade" id="video" role="tabpanel"
+          aria-labelledby="video-tab">Video</div>
+      </div>
+    </section>
+
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+
+
+      <script>
+        const showMore = document.querySelector('.showMore')
+        const showMoreContent = document.querySelector('.show-more-content')
+        showMore.addEventListener('click', e =>{
+          showMoreContent.classList.remove('d-none')
+          showMore.classList.add('d-none')
+        })
+      </script>
   </body>
 </html>
