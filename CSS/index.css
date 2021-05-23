@@ -20,7 +20,7 @@ body {
 }
 
 
-.gird__list {
+.gird__list{
   display: grid;
   grid-template-columns: repeat(1 3fr);
 }
@@ -45,14 +45,14 @@ body {
   grid-row: 5/ span 2;
 }
 
-.item-11 {
-  grid-column: 3 / span 1;
-  grid-row: 5/ span 1;
+.item-19 {
+  grid-column: 1 / span 2;
+  grid-row: 9/ span 2;
 }
 
-.item-12 {
-  grid-column: 3 / span 1;
-  grid-row: 6/ span 1;
+.item-28 {
+  grid-column: 1 / span 2;
+  grid-row: 13/ span 2;
 }
 
 
@@ -94,6 +94,13 @@ body {
   font-size: 14px;
 }
 
+.overlay h4 {
+  text-overflow: ellipsis;
+  height: 24px;
+  overflow: hidden;
+  transition: all 3s;
+}
+
 .overlay p {
   opacity: 0;
   transition: all 1.5s;
@@ -116,6 +123,14 @@ body {
   opacity: 1;
 }
 
+.gird__item:hover .overlay h4 {
+  height: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
+
+
