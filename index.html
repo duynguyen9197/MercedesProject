@@ -56,24 +56,31 @@
     <!-- Lê Huỳnh Quí -->
     <!-- BS4 script -->
 
-    <section class="gird">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="new-tab" data-toggle="tab"
-            href="#new" role="tab" aria-controls="new" aria-selected="true">New</a>
+
+
+
+
+
+
+    <section class="gird mb-5">
+      <ul class="nav nav-tabs justify-content-center border-0 mb-5 size-14" id="myTab" role="tablist">
+        <li class="nav-item mr-5" role="presentation">
+          <a class="nav-link py-2 px-0 text-white active" id="new-tab" data-toggle="tab"
+            href="#new" role="tab" aria-controls="new" aria-selected="true"><i class="far fa-newspaper mr-3 size-16"></i>New</a>
         </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="popular-tab" data-toggle="tab"
+        <li class="nav-item mr-5" role="presentation">
+          <a class="nav-link py-2 px-0 text-white" id="popular-tab" data-toggle="tab"
             href="#popular" role="tab" aria-controls="popular"
-            aria-selected="false">Popular</a>
+            aria-selected="false"><i class="fas fa-star mr-3 size-16"></i>Popular</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="video-tab" data-toggle="tab"
+          <a class="nav-link py-2 px-0 text-white" id="video-tab" data-toggle="tab"
             href="#video" role="tab" aria-controls="video"
-            aria-selected="false">Videos</a>
+            aria-selected="false"><i class="fas fa-play mr-3 size-16"></i>Videos</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
+<!-- NEW -->
         <div class="tab-pane fade show active" id="new" role="tabpanel"
           aria-labelledby="new-tab">
           <div class="gird__list">
@@ -87,6 +94,7 @@
                   Munich.</p>
               </div>
             </div>
+
             <div class="gird__item m-min item-2 position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
                 src="./images/00-mercedes-benz-gle-2020-v167-styling-and-features-2560x1440.webp"
@@ -97,6 +105,7 @@
                   suspension of the new GLE are highlighted.</p>
               </div>
             </div>
+
             <div class="gird__item m-min item-3 position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
                 src="./images/01-mercedes-benz-museum-33-extras-2560x1440.webp"
@@ -138,7 +147,6 @@
               </div>
             </div>
 
-
             <div class="gird__item m-min position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
                 src="./images/Mercedes-Benz-EQ-Formula_E_Team_santiago_teserjpeg.webp"
@@ -169,7 +177,6 @@
               </div>
             </div>
 
-            <!-- //////////////////// -->
             <div class="gird__item m-min item-10 position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
                 src="./images/Mercedes-Benz_EQ_Silver_Arrow_02_M3_P3_16-9jpeg.jpeg"
@@ -179,7 +186,8 @@
                 <p class="size-14">Performance meets design: Mercedes-EQ Silver Arrow 02 is our race car for the ABB FIA Formula E Season 7.</p>
               </div>
             </div>
-            <div class="gird__item m-min item-11 position-relative overflow-hidden">
+
+            <div class="gird__item m-min position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
                 src="./images/00-mercedes-benz-art-and-creativity-with-mercedes-benz-2560x1440.webp"
                 alt="">
@@ -188,7 +196,8 @@
                 <p class="size-14">Mercedes-Benz’s global fashion engagement is championed by a self-imposed commitment to support emerging ta...</p>
               </div>
             </div>
-            <div class="gird__item m-min item-12 position-relative overflow-hidden">
+
+            <div class="gird__item m-min position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
                 src="./images/00-we-drive-the-city-mercedes-eq-formula-e-team-2560x1440.webp"
                 alt="">
@@ -197,8 +206,6 @@
                 <p class="size-14">Electrifying innovation knows no bounds: with #WeDriveTheCity​, we want to inspire change for society.</p>
               </div>
             </div>
-
-
 
             <div class="gird__item m-min position-relative overflow-hidden">
               <img class="w-100 h-100 object-fit-cover"
@@ -220,205 +227,909 @@
               </div>
             </div>
 
-            <!-- HIDE -->
-            <!-- <span class="show-more-content"> -->
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-the-perfect-fit-your-mercedes-benz-and-mercedes-me-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light text-ellipsis">The perfect fit: Your Mercedes-Benz & Mercedes me.</h4>
-                  <p class="size-14">Some things just work perfectly together. Like your Mercedes-Benz and the digital services of Mercedes me.</p>
-                </div>
+            <!-- NEW - HIDE -->
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-the-perfect-fit-your-mercedes-benz-and-mercedes-me-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light text-ellipsis">The perfect fit: Your Mercedes-Benz & Mercedes me.</h4>
+                <p class="size-14">Some things just work perfectly together. Like your Mercedes-Benz and the digital services of Mercedes me.</p>
               </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/01-mercedes-benz-debuts-fashion-film-at-mbfw-russia-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Mercedes-Benz debuts fashion film at MBFW Russia.</h4>
-                  <p class="size-14">A new fashion short film by Emma Bruschi premiered on the opening day of Mercedes-Benz Fashion Week in Russ...</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-benz-the-eqs-by-mercedes-eq-and-its-holistic-charging-concept-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The new EQS and its holistic charging concept.</h4>
-                  <p class="size-14">In combination with Mercedes me Charge, the new EQS offers important innovations and services in charge man...</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/mercedes-eq-formula-e-team_valencia_00_16-9jpeg.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Valencia 2021: Spanish debut full of surprises</h4>
-                  <p class="size-14">What a spectacular race debut on Spanish soil this turned out to be for the Mercedes-EQ Formula E Team.</p>
-                </div>
-              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/01-mercedes-benz-debuts-fashion-film-at-mbfw-russia-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz debuts fashion film at MBFW Russia.</h4>
+                <p class="size-14">A new fashion short film by Emma Bruschi premiered on the opening day of Mercedes-Benz Fashion Week in Russ...</p>
+              </div>
+            </div>
 
-              <div class="gird__item hidden-picture d-none item-19 m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/mercedes-benz-three-things-you-need-to-know-about-the-new-eqs-v297-2021-by-mercedes-eq-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The new EQS – All you need to know.</h4>
-                  <p class="size-14">All the characteristics of the new EQS: outstanding interior design, the efficient electric drive and the e...</p>
-                </div>
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-eqs-by-mercedes-eq-and-its-holistic-charging-concept-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQS and its holistic charging concept.</h4>
+                <p class="size-14">In combination with Mercedes me Charge, the new EQS offers important innovations and services in charge man...</p>
               </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/01-mercedes-benz-history-mercedes-brand-established-120-years-ago-in-nice-2560x1440.jpeg"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Mercedes: Brand established 120 years ago in Nice.</h4>
-                  <p class="size-14">The Mercedes brand name was born 120 years ago at the important “Nice Week” racing event in March 1901.</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-benz-g-class-schoeckl-made-to-last2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The G-Class: Made to last.</h4>
-                  <p class="size-14">For over 40 years, the Schöckl in the mountains of Graz has been the ultimate test for every G-Class.</p>
-                </div>
-              </div>
+            </div>
 
-              <!-- //////// -->
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/01-mercedes-benz-history-spotlight-on-the-new-top-of-the-range-model-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Spotlight on the new top-of-the-range model..</h4>
-                  <p class="size-14">30 years ago, in 1991, the S-Class, model series W 140, celebrated its premiere at the Geneva Motor Show.</p>
-                </div>
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-eq-formula-e-team_valencia_00_16-9jpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Valencia 2021: Spanish debut full of surprises</h4>
+                <p class="size-14">What a spectacular race debut on Spanish soil this turned out to be for the Mercedes-EQ Formula E Team.</p>
               </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-eq-enthusiasts-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Mercedes-EQ Enthusiasts.</h4>
-                  <p class="size-14">Dennis Heyn goes behind the scenes of Mercedes-EQ and talks to the experts behind the brand’s electric cars...</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/mercedes-eq-formula-e-team-valencia-eprix-preview-00-16-9jpeg.jpeg"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Strategy will prove crucial on Valencia debut.</h4>
-                  <p class="size-14">The first ever Spanish E-Prix, taking place in Valencia this weekend, is expected to be challenging with it...</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/Screen Shot 2021-05-23 at 22.53.27.png"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Motorsports</h4>
-                  <p class="size-14">Mercedes-Benz Motorsports Channels</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-eq-technological-curiosity-explained-eqs-vision-avtr-silver-arrow-02-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">EQS, Vision AVTR, Silver Arrow 02 – technological curiosity ...</h4>
-                  <p class="size-14">Join Matt, Ian James and Christoph Starzynski to learn more about three special Mercedes-EQ vehicles.</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-eq-eqb-2021-x243-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The new EQB.</h4>
-                  <p class="size-14">As an all-electric compact car from Mercedes-EQ with seven seats, the EQB offers room for the whole family.</p>
-                </div>
-              </div>
-              <!-- ////// -->
-              <div class="gird__item hidden-picture d-none item-28 m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-benz-level-up-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">LEVEL UP!</h4>
-                  <p class="size-14">Petrol prices, taxes, insurance? Your car only becomes really expensive if it is not properly maintained an...</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-benz-the-new-eqs-v297-2021-by-mercedes-eq-the-arrival-2560x1440.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The new EQS by Mercedes-EQ – The arrival.</h4>
-                  <p class="size-14">This is for you, world. The all-electric EQS. A luxury saloon that leads the way into a new era of electric...</p>
-                </div>
-              </div>
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/mercedes-benz-eqs-v297-teaser-2560x1440-03-2021.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The EQS.</h4>
-                  <p class="size-14">The new all-electric EQS from Mercedes-EQ. The ultimate in luxury, in a breathtaking design.</p>
-                </div>
-              </div>
+            </div>
 
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/vision-avtra-eqs-and-mercedes-eq-silver-arrow-01-standing-together-in-a-garage.webp"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">Technological Curiosity</h4>
-                  <p class="size-14">Curiosity is at the forefront of any great discovery. And that’s why our exploration of electric mobility b...</p>
-                </div>
+            <div class="gird__item hidden-picture-new d-none item-19 m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-three-things-you-need-to-know-about-the-new-eqs-v297-2021-by-mercedes-eq-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQS – All you need to know.</h4>
+                <p class="size-14">All the characteristics of the new EQS: outstanding interior design, the efficient electric drive and the e...</p>
               </div>
+            </div>
 
-              <div class="gird__item hidden-picture d-none m-min position-relative overflow-hidden">
-                <img class="w-100 h-100 object-fit-cover"
-                  src="./images/00-mercedes-benz-mercedes-eq-eqs-2021-v297-2560x1440.jpeg"
-                  alt="">
-                <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
-                  <h4 class="size-20 font-weight-light">The new all-electric EQS.</h4>
-                  <p class="size-14">Fusing technology, design, functionality and connectivity, the EQS delights both drivers and passengers.</p>
-                </div>
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/01-mercedes-benz-history-mercedes-brand-established-120-years-ago-in-nice-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes: Brand established 120 years ago in Nice.</h4>
+                <p class="size-14">The Mercedes brand name was born 120 years ago at the important “Nice Week” racing event in March 1901.</p>
               </div>
+            </div>
 
-              
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-g-class-schoeckl-made-to-last2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The G-Class: Made to last.</h4>
+                <p class="size-14">For over 40 years, the Schöckl in the mountains of Graz has been the ultimate test for every G-Class.</p>
+              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/01-mercedes-benz-history-spotlight-on-the-new-top-of-the-range-model-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Spotlight on the new top-of-the-range model..</h4>
+                <p class="size-14">30 years ago, in 1991, the S-Class, model series W 140, celebrated its premiere at the Geneva Motor Show.</p>
+              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-enthusiasts-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-EQ Enthusiasts.</h4>
+                <p class="size-14">Dennis Heyn goes behind the scenes of Mercedes-EQ and talks to the experts behind the brand’s electric cars...</p>
+              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-eq-formula-e-team-valencia-eprix-preview-00-16-9jpeg.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Strategy will prove crucial on Valencia debut.</h4>
+                <p class="size-14">The first ever Spanish E-Prix, taking place in Valencia this weekend, is expected to be challenging with it...</p>
+              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/Screen Shot 2021-05-23 at 22.53.27.png"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Motorsports</h4>
+                <p class="size-14">Mercedes-Benz Motorsports Channels</p>
+              </div>
+            </div>
 
-            <!-- </span> -->
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-technological-curiosity-explained-eqs-vision-avtr-silver-arrow-02-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">EQS, Vision AVTR, Silver Arrow 02 – technological curiosity ...</h4>
+                <p class="size-14">Join Matt, Ian James and Christoph Starzynski to learn more about three special Mercedes-EQ vehicles.</p>
+              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-eqb-2021-x243-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQB.</h4>
+                <p class="size-14">As an all-electric compact car from Mercedes-EQ with seven seats, the EQB offers room for the whole family.</p>
+              </div>
+            </div>
 
+            <div class="gird__item hidden-picture-new d-none item-28 m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-level-up-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">LEVEL UP!</h4>
+                <p class="size-14">Petrol prices, taxes, insurance? Your car only becomes really expensive if it is not properly maintained an...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-eqs-v297-2021-by-mercedes-eq-the-arrival-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQS by Mercedes-EQ – The arrival.</h4>
+                <p class="size-14">This is for you, world. The all-electric EQS. A luxury saloon that leads the way into a new era of electric...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-eqs-v297-teaser-2560x1440-03-2021.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The EQS.</h4>
+                <p class="size-14">The new all-electric EQS from Mercedes-EQ. The ultimate in luxury, in a breathtaking design.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/vision-avtra-eqs-and-mercedes-eq-silver-arrow-01-standing-together-in-a-garage.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Technological Curiosity</h4>
+                <p class="size-14">Curiosity is at the forefront of any great discovery. And that’s why our exploration of electric mobility b...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-new d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-mercedes-eq-eqs-2021-v297-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new all-electric EQS.</h4>
+                <p class="size-14">Fusing technology, design, functionality and connectivity, the EQS delights both drivers and passengers.</p>
+              </div>
+            </div>
           </div>
 
           <div class="text-center mt-5">
-            <button class="showMore">Show more</button>
+            <button class="showMoreNew size-16 px-3 py-1"><i class="fas fa-chevron-down size-14 pr-2"></i>Show more</button>
           </div>
         </div>
 
 
-
+<!-- POPULAR -->
         <div class="tab-pane fade" id="popular" role="tabpanel"
-          aria-labelledby="popular-tab">Popular</div>
+          aria-labelledby="popular-tab">
+          <div class="gird__list">
+            <div class="gird__item m-min item-1 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-design-uebersicht-2560x1440-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Design</h4>
+                <p class="size-14">The designers at Mercedes-Benz are reconciling tradition and modernity in designing the cars for the future...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min item-2 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-g-class-w463-brandhub-g-world-fullscreen-stage-3400x1400-01-2020.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">TG-Class world.</h4>
+                <p class="size-14">Discover the multifaceted world of the G-Class and be inspired by the values that this exceptional off-road...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min item-3 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-eqs-v297-teaser-2560x1440-03-2021.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The EQS.</h4>
+                <p class="size-14">The new all-electric EQS from Mercedes-EQ. The ultimate in luxury, in a breathtaking design. </p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-maybach-s-class-z223-teaser-image-2560x1440-11-2020.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new Mercedes-Maybach S-Class.</h4>
+                <p class="size-14">The brand’s hallmark combination of ultimate luxury and cutting-edge technology.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/keyvisual_fahrzeuge_uebersicht.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz Vehicle Overview.</h4>
+                <p class="size-14">Discover the current vehicle models from Mercedes-Benz: Passenger vehicles, vans, trucks and buses.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/01-mercedes-me-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes me.</h4>
+                <p class="size-14">Check your vehicle’s data or take a look at your contracts – this is the future of mobility with Mercedes m...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-mercedes-eq-eqs-2021-v297-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new all-electric EQS.</h4>
+                <p class="size-14">Fusing technology, design, functionality and connectivity, the EQS delights both drivers and passengers.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-golf-glc-x-253-2560x1440-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Sports</h4>
+                <p class="size-14">All of the current Mercedes-Benz sporting events at a glance: You can find reports about the most important...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-maybach-gls-x167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new Mercedes-Maybach</h4>
+                <p class="size-14">The ultimate in luxury: Discover the new Mercedes-Maybach GLS.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min item-10 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mbcom_classic_uebersicht_280sl_11_2560x1440_va.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz Classic: Classics, festivals and milestones.</h4>
+                <p class="size-14">Mercedes-Benz Classic: Experience milestones and enjoy emotional insights into the history of the inventor ...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-eqb-2021-x243-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQB.</h4>
+                <p class="size-14">As an all-electric compact car from Mercedes-EQ with seven seats, the EQB offers room for the whole family.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-innovation-vision-urbanetic-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz: Innovation.</h4>
+                <p class="size-14">As a pioneer of the automobile, we seek innovations which provide for pleasant, safe and resource-friendly ...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-marco-polo-header-overview-excerpt-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Sprinter and Marco Polo – the perfect companions for almost ...</h4>
+                <p class="size-14">The Marco Polo is a premium camper van. It is perfect for adventurers who want to travel in style.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/01-mercedes-benz-museum-overview-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz Museum Stuttgart – 130 years of history.</h4>
+                <p class="size-14">The Mercedes-Benz Museum is the only museum in the world that can document in a single continuous timeline ...</p>
+              </div>
+            </div>
+
+            <!-- POPULAR - HIDE -->
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-trucks-2017-actros-1851-bm-963-2560x1440-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Trucks</h4>
+                <p class="size-14">Mercedes-Benz Trucks offers the right solution for the light-duty, medium-duty and heavy-duty truck segment...</p>
+              </div>
+            </div>
+            
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-design-cls-coupe-c-257-sketch-2560x1440-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light text-ellipsis">Vehicle design between intelligence & emotion.</h4>
+                <p class="size-14">The designers at Mercedes-Benz are reconciling tradition and modernity in designing the cars for the future...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/FAHRZEUGE_Die_automobile_Unabhngigkeitserklrung_01-1230x740.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz G 63 AMG 6x6: The automotive declaration of in...</h4>
+                <p class="size-14">The G 63 AMG 6X6 embodies a perfect synthesis of uncompromising extravagance and technical perfection.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-passenger-cars-e-class-coupe-c-238-avantgarde-obsidian-black-metallic-2560x1440-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Passenger Cars</h4>
+                <p class="size-14">Discover the current Mercedes-Benz model range and experience automotive fascination in articles, videos & ...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-lifestyle-g-500-4x4c2b2-w-463-2560x1400-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Lifestyle</h4>
+                <p class="size-14">Let the fashion, lifestyle, art, adventure and culture that you will find here inspire you.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-c-class-saloon-estate-2021-w206-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new C-Class: Saloon and Estate.</h4>
+                <p class="size-14">Welcome to a new, even more digital and efficient world, and welcome home: the new C-Class.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-eq-eqa-2021-h243-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQA.</h4>
+                <p class="size-14">Efficient driving pleasure: EQA is the name of the new entry-level model to the all-electric world of Merce...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none item-19 m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-eqa-h243-teaser-image-2560x1440-01-2021.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQA.</h4>
+                <p class="size-14">The new EQA combines efficient driving excitement with outstanding suitability for everyday use.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-2020-mercedes-maybach-gls-600-4matic-x167-two-colour-paint-rubellite-red-obsidian-black-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new Mercedes-Maybach GLS.</h4>
+                <p class="size-14">The Mercedes-Maybach GLS 600 4MATIC represents a new form of luxury in the SUV segment.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-vehicles-concept-cars-vision-avtr-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Inspired by the future: The VISION AVTR.</h4>
+                <p class="size-14">The concept car VISION AVTR shows a completely new interaction between human, machine and nature.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/Mercedes-Benz-EQ-Formula_E_Team_santiago_teserjpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-EQ Formula E Team</h4>
+                <p class="size-14">Welcome to the Mercedes-EQ Formula E Team. Discover all about racing and our drive for lifestyle, sustainab...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-mercedes-maybach-s-class-2021-z223-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new Mercedes-Maybach S-Class.</h4>
+                <p class="size-14">Experience exclusivity and individuality, elegant design and first-class standard of finish.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mbstyle_argon18_mbs_a18_renderfb_001-copy_2560x1440_vx-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Bicycle.</h4>
+                <p class="size-14">Mercedes-Benz Style’s collaboration with Argon 18 incorporated a minimalist approach to the bicycle.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none  item-28 m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-enthusiasts-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-EQ Enthusiasts.</h4>
+                <p class="size-14">Dennis Heyn goes behind the scenes of Mercedes-EQ and talks to the experts behind the brand’s electric cars...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-florian-ambrosius-test-drives-the-new-s-class-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new S-Class – Presented by Florian Ambrosius.</h4>
+                <p class="size-14">Have a look at how the new S-Class will redefine your concept of high-end technology and comfort.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mbcom_classic_museum_ausstellungen_titel_2560x1440-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Exhibition.</h4>
+                <p class="size-14">A unique journey through automotive history.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-vision-eqs-show-car-mercedes-benz-eq-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">VISION EQS.</h4>
+                <p class="size-14">The VISION EQS is a trailblazer for the entire EQ family. The study provides an outlook on sustainable luxu...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-popular d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-vans-sprinter-vito-citan-excerpt-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The reliable business partner: the vans from Mercedes-Benz.</h4>
+                <p class="size-14">Mercedes-Benz provides innovative vans with reliable quality and safety: Citan, Vito and Sprinter have the ...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="showMore-popular size-16 px-3 py-1"><i class="fas fa-chevron-down size-14 pr-2"></i>Show more</button>
+          </div>
+        </div>
 
 
-
+<!-- VIDEOS -->
         <div class="tab-pane fade" id="video" role="tabpanel"
-          aria-labelledby="video-tab">Video</div>
+          aria-labelledby="video-tab">
+          <div class="gird__list">
+            <div class="gird__item m-min item-1 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-gle-2020-v167-styling-and-features-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new GLE – Styling and features.</h4>
+                <p class="size-14">In this video, highlights such as the MBUX and the new
+                  suspension of the new GLE are highlighted.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min item-2 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-s-class-w223-2020-and-its-functions-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new S-Class and its functions.</h4>
+                <p class="size-14">The S-Class stands for legendary as well as traditional engineering. It defines the luxury segment in the a...</p>
+              </div>
+            </div>
+
+             <div class="gird__item m-min item-3 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-amg-inside-amg-series-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">INSIDE AMG.</h4>
+                <p class="size-14">In our new video series, INSIDE AMG, Product Manager Felix Schönhofer meets talented Mercedes-AMG experts.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-we-drive-the-city-mercedes-eq-formula-e-team-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">We Drive the City: Mercedes-EQ Formula E Team.</h4>
+                <p class="size-14">Electrifying innovation knows no bounds: with #WeDriveTheCity​, we want to inspire change for society.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-florian-ambrosius-test-drives-the-new-s-class-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new S-Class – Presented by Florian Ambrosius.</h4>
+                <p class="size-14">Have a look at how the new S-Class will redefine your concept of high-end technology and comfort.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-the-perfect-fit-your-mercedes-benz-and-mercedes-me-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light text-ellipsis">The perfect fit: Your Mercedes-Benz & Mercedes me.</h4>
+                <p class="size-14">Some things just work perfectly together. Like your Mercedes-Benz and the digital services of Mercedes me.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-three-things-you-need-to-know-about-the-new-eqs-v297-2021-by-mercedes-eq-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQS – All you need to know.</h4>
+                <p class="size-14">All the characteristics of the new EQS: outstanding interior design, the efficient electric drive and the e...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-g-class-schoeckl-made-to-last2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The G-Class: Made to last.</h4>
+                <p class="size-14">For over 40 years, the Schöckl in the mountains of Graz has been the ultimate test for every G-Class.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-enthusiasts-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-EQ Enthusiasts.</h4>
+                <p class="size-14">Dennis Heyn goes behind the scenes of Mercedes-EQ and talks to the experts behind the brand’s electric cars...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min item-10 position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-eq-technological-curiosity-explained-eqs-vision-avtr-silver-arrow-02-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">EQS, Vision AVTR, Silver Arrow 02 – technological curiosity ...</h4>
+                <p class="size-14">Join Matt, Ian James and Christoph Starzynski to learn more about three special Mercedes-EQ vehicles.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-level-up-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">LEVEL UP!</h4>
+                <p class="size-14">Petrol prices, taxes, insurance? Your car only becomes really expensive if it is not properly maintained an...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-eqs-v297-2021-by-mercedes-eq-the-arrival-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new EQS by Mercedes-EQ – The arrival.</h4>
+                <p class="size-14">This is for you, world. The all-electric EQS. A luxury saloon that leads the way into a new era of electric...</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-c-class-wagon-2021-s206-enter-the-comfort-zone-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new C-Class Wagon: Enter the comfort zone.</h4>
+                <p class="size-14">The new C-Class is your retreat to recharge. A true comfort zone. Comfort in every single detail.</p>
+              </div>
+            </div>
+
+            <div class="gird__item m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-cls-c257-2021-the-new-cls-icon-meets-progressive-design-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new CLS: Icon meets progressive design.</h4>
+                <p class="size-14">The new CLS impresses with a balance of cultivated sportiness and progressive design language.</p>
+              </div>
+            </div>
+
+            <!--VIDEOS - HIDE --> 
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-a-class-asmr-experience-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light text-ellipsis">The A-Class: An ASMR experience.</h4>
+                <p class="size-14">Grab your headphones and hear the sounds of a car wash and the soothing sensations of the A-Class Saloon.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-global-services-parts-online-appointment-booking-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Online appointment booking.</h4>
+                <p class="size-14">With just a few clicks you can conveniently book your Mercedes-Benz service appointments online – anywhere,...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-c-class-sedan-enter-the-comfort-zone-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new C-Class Sedan: Enter the comfort zone.</h4>
+                <p class="size-14">The new C-Class is your retreat to recharge. A true comfort zone. Comfort in every single detail.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-e-class-with-florian-ambrosius-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Florian Ambrosius tests the new E-Class.</h4>
+                <p class="size-14">In this video series, the new E-Class is put through its paces by Mercedes-Benz Brand Ambassador Florian Am...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none item-19 m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-valet-guys-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Valet Guys.</h4>
+                <p class="size-14">What might Valet Guys do when you trustingly give them the keys to your car? They surely have a lot of fun.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-c-class-2021-w206-rapid-fire-questions-to-dirk-fetzer-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The C-Class: Rapid-fire questions to Dirk Fetzer.</h4>
+                <p class="size-14">Dirk Fetzer, Head of Product Management S-/E-/C-Class, shares his personal views on the new C-Class.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-my-car-is-my-castle-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">My car is my castle.</h4>
+                <p class="size-14">Those who strive for freedom and adventure need a reliable partner along the way. Join us on a journey in t...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-all-you-need-to-know-about-the-new-mercedes-benz-c-class-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new C-Class – All you need to know.</h4>
+                <p class="size-14">Here’s everything you need to know about the new C-Class! Learn more about the Sedan, the Wagon and the pow...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/mercedes-benz-the-g-class-built-to-last-2560x1440jpeg.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The G-Class: Built to last.</h4>
+                <p class="size-14">The G-Class is built to last. Unlike other thing,s as this ballet dancer is about to find out… </p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-gla-presented-by-sarah-elsser-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new GLA. Presented by Sarah Elsser.</h4>
+                <p class="size-14">From sporty design to a dashboard packed with high-tech features: the new GLA ticks all the boxes.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-glb-2020-testing-with-leonie-von-hase-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Leonie von Hase tests the new GLB.</h4>
+                <p class="size-14">In this video series the new GLB is put through its paces by Mercedes-Benz brand ambassador Leonie von Hase...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-the-new-mercedes-benz-s-class-w223-with-alicia-keys-roger-federer-lewis-hamilton-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new S-Class with Alicia Keys, Roger Federer & Lewis Hami....</h4>
+                <p class="size-14">In the end it’s all about being there for your loved ones and taking care of what really matters.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-fan-facts-and-sales-figures-from-2020-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Mercedes-Benz fan facts & sales figures from 2020.</h4>
+                <p class="size-14">We have collected exciting facts and figures and provide you with interesting insights.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none  item-28 m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-experience-the-new-mercedes-me-app-generation-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-25 b-15 px-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Discover the new Mercedes me App generation.</h4>
+                <p class="size-14">Check your range, find a parking space, make a service appointment – all this is possible with the Mercedes...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-the-new-mercedes-me-app-generation-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The new generation of Mercedes me Apps.</h4>
+                <p class="size-14">Imagine if you could check your range via app, or lock your doors and sunroof. Or find a parking space. Che...</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-mixed-tape-alondra-de-la-parra-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">Alondra de la Parra curates “The Rite of Joy” – Mixed Tape #...</h4>
+                <p class="size-14">World-class conductor Alondra de la Parra curates Mercedes-Benz’ new Mixed Tape #65 – “The Rite of Joy”.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mbvideocar-cla-220-lorenz-klapfer-moritz-kluth-2560x1440.webp"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">#MBvideocar: CLA 220 d – Lose yourself.</h4>
+                <p class="size-14">In this episode of #MBvideocar, filmmaker Lorenz Klapfer takes the CLA 220 d through Berlin.</p>
+              </div>
+            </div>
+
+            <div class="gird__item hidden-picture-videos d-none m-min position-relative overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover"
+                src="./images/00-mercedes-benz-exclusive-details-the-exterior-design-of-the-new-mercedes-maybach-s-class-2560x1440.jpeg"
+                alt="">
+              <div class="overlay position-absolute bg-back w-100 h-50 b-30 pl-4 pt-3 pb-5">
+                <h4 class="size-20 font-weight-light">The exterior design of the new Mercedes-Maybach S-Class</h4>
+                <p class="size-14">The new Mercedes-Maybach S-Class expresses the brand-typical experience of sophisticated luxury. Check it o...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="showMore-videos size-16 px-3 py-1"><i class="fas fa-chevron-down size-14 pr-2"></i>Show more</button>
+          </div>
+        
+        </div>
       </div>
     </section>
+
+  
+    <section class="brandhub px-5 size-14 mt-5 pt-5">
+      <div>
+        <span class="mr-4">
+          <i class="fas fa-gas-pump"></i>
+          Kraftstoffverbrauch kombiniert
+        </span>
+        <span class="mr-4">
+          <i class="fas fa-leaf"></i>
+          CO<sub>2</sub>-Emissionen kombiniert
+        </span>
+        <span>
+          <i class="fas fa-plug"></i>
+          Stromverbrauch im kombinierten Testzyklus 
+        </span>
+      </div>
+      <ul class="list-unstyled">
+        <li class="mb-3 mt-4">
+          <sup>1</sup>
+          Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren ermittelt. Es handelt sich um die „NEFZ-CO₂-Werte“ i. S. v. Art. 2 Nr. 1 Durchführungsverordnung (EU) 2017/1153. Die Kraftstoffverbrauchswerte wurden auf Basis dieser Werte errechnet. Der Stromverbrauch wurde auf der Grundlage der VO 692/2008/EG ermittelt. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.
+        </li>
+        <li class="mb-3">
+          <sup>4</sup>
+          Angaben zu Kraftstoffverbrauch, Stromverbrauch und CO₂-Emissionen sind vorläufig und wurden vom Technischen Dienst für das Zertifizierungsverfahren nach Maßgabe des WLTP-Prüfverfahrens ermittelt und in NEFZ-Werte korreliert. Eine EG-Typgenehmigung und Konformitätsbescheinigung mit amtlichen Werten liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
+        </li>
+        <li class="mb-3">
+          <sup>6</sup>
+          Stromverbrauch und Reichweite wurden auf der Grundlage der VO 692/2008/EG ermittelt. Stromverbrauch und Reichweite sind abhängig von der Fahrzeugkonfiguration. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.
+        </li>
+        <li class="mb-3">
+          <sup>7</sup>
+          Angaben zu Stromverbrauch und Reichweite sind vorläufig und wurden vom Technischen Dienst für das Zertifizierungsverfahren nach Maßgabe der UN/ECE-Regelung Nr. 101 ermittelt. Die EG-Typgenehmigung und eine Konformitätsbescheinigung mit amtlichen Werten liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
+        </li>
+        <li>
+          <sup>8</sup>
+          Alle technischen Angaben sind vorläufig und wurden intern nach Maßgabe der jeweils anwendbaren Zertifizierungsmethode ermittelt. Es liegen bislang weder bestätigte Werte vom TÜV noch eine EG-Typgenehmigung noch eine Konformitätsbescheinigung mit amtlichen Werten vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
+        </li>
+      </ul>
+    </section>
+
+
+
+
+
+
+
+
+
 
 
     <script
@@ -435,16 +1146,6 @@
       crossorigin="anonymous"></script>
 
 
-      <script>
-        const showMore = document.querySelector('.showMore')
-        const hiddenPicture = document.querySelectorAll('.hidden-picture')
-        
-        showMore.addEventListener('click', e =>{
-          showMore.classList.add('d-none')
-          for (var i = 0; i < hiddenPicture.length; ++i) {
-            hiddenPicture[i].classList.remove('d-none')
-          }
-        })
-      </script>
+      <script src="./js/main.js"></script>
   </body>
 </html>
