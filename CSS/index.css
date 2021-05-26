@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+
+}
 body {
   background-color: #000;
   color: white;
@@ -12,7 +17,11 @@ body {
 }
 
 
-/* ///////////////// 0.1 font-size */
+/* ///////////////// 0.1 font-size & line-height */
+.size-28 {
+  font-size: 28px;
+}
+
 .size-22 {
   font-size: 22px;
 }
@@ -33,7 +42,9 @@ body {
   font-size: 14px;
 }
 
-
+.line-height-23 {
+  line-height: 23px
+}
 
 /* ///////////////// 0.2 position  */
 .t-0 {
@@ -213,5 +224,32 @@ body {
   cursor: pointer;
 }
 
+/*---------------------- 2.2 footer -------------------- */
 
+.border-color {
+  border-color: #303030!important;
+}
+footer a {
+  transition: all .3s linear;
+}
 
+footer a:hover {
+  color: #00adef!important;
+}
+
+footer img {
+  transition: all .5s linear;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+footer .top {
+  transition: all .5s;
+}
+
+footer .top:hover {
+  color: #00adef;
+  cursor: pointer;
+}
