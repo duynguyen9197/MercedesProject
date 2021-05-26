@@ -40,3 +40,6 @@ topBtn.addEventListener('click', e =>{
     window.scrollTo({top: 0})
 })
 
+
+// Sử dungj thư viện AOS
+AOS.init({duration: 2000});
