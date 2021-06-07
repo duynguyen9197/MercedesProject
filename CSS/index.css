@@ -13,6 +13,8 @@ body {
   max-width: 1680px;
   margin: auto;
   font-size: 16px;
+  font-family: 'Bitter', serif;
+  font-family: 'Shippori Mincho B1', serif;
 }
 a {
   color: white;
@@ -95,6 +97,283 @@ a:hover {
 /* ////////////////////////////////////--------------------II. INDIVIDUALS (RIÊNG)------------------////////////////////////////// */
 
 /* ---------------------------------------- 1. NGỌC DUY ----------------------------------------*/
+
+/*---------------------- 2.1 HEADER -------------------- */
+
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header_top {
+  font-size: 12px;
+}
+.header_top i {
+  padding: 5px;
+  border: 1px white solid;
+  font-size: x-small;
+  line-height: 5px;
+}
+.header_top a:hover i {
+  border: 1px #0088c6 solid;
+}
+/* NAVBAR */
+.navbar-brand img:first-child {
+  position: relative;
+  bottom: 20px;
+}
+.navbar-brand img:last-child {
+  margin-bottom: 10px;
+  margin-left: 1rem;
+}
+
+.navbar-nav--mr a {
+  margin-right: 1rem;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
+
+/* NAVI END */
+
+
+
+/*---------------------- 2.2 Carousel -------------------- */
+.carousel--overflow {
+  overflow: visible;
+}
+.carousel-caption--position {
+  text-align: left;
+  right: 10;
+  bottom: 50%;
+  left: 10%;
+  height: 45%;
+}
+/* CArousel END */
+
+.carousel-caption--position h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  animation: CarouselCaption 1s 1;
+  width: 62%;
+}
+.carousel-caption--position button {
+  border-radius: 0%;
+  border: black 1px solid;
+  padding: 0.5rem;
+  /* width: 15%; */
+  animation: CarouselCaption 2s 1;
+}
+
+.btn-custom {
+  background-color: #333;
+
+}
+
+.btn-custom:hover {
+  background-color: #000;
+  
+}
+/* Carousel-Animation */
+.carousel-item.active h1 {
+  transform: translateY(20px);
+  transition: all 1.5s;
+}
+.carousel-item.active .carousel-caption--position button {
+  transform: translateY(25px);
+  transition: all 2s;
+}
+
+@keyframes CarouselCaption {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Carousel-Animation end */
+
+/*---------------------- 2.3 SEARCH -------------------- */
+.Search .search--container {
+  background: #141414;
+}
+.Search .search--container .search__input,
+.search__btn {
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  background: rgb(255, 255, 255);
+}
+.search--container .search__btn:focus {
+  box-shadow: none;
+}
+.search--container .search__input:focus {
+  border: white 1px solid;
+}
+/* SEARCH END */
+
+
+/*---------------------- 2.4 WELCOME -------------------- */
+
+.Welcome {
+  padding: 50px 0;
+  font-size: 14px;
+}
+.Welcome__text {
+  width: 70%;
+}
+.Welcome__text h1 {
+  font-size: 34px;
+  margin-bottom: 1.5rem;
+}
+.Welcome__text .mbusa {
+  color: #0088c6;
+}
+.Welcome__text .mbusa:hover {
+  text-decoration: underline;
+}
+.Welcome__text .btn--BringMe {
+  border: none;
+  border-radius: 0;
+}
+
+.color-different {
+  background-color: #00adef;
+}
+
+.color-different:hover {
+  background-color: #0088c6;
+}
+
+
+/*---------------------- 2.5 Channel -------------------- */
+
+
+.Channel__col {
+  flex: 25%;
+  padding: 0.5rem;
+}
+.line {
+  position: relative;
+  overflow: hidden;
+}
+.line::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #00adef;
+  position: absolute;
+  bottom: -8px;
+  transition: all 0.5s;
+}
+
+.Channel__col:hover {
+  cursor: pointer;
+}
+
+.Channel__col:hover .line::before {
+  bottom: 0px;
+
+}
+
+@media screen and (max-width: 767px) {
+  .Channel__col {
+    flex: 50%;
+  }
+}
+
+
+/*---------------------- 2.6 RightSide Nav -------------------- */
+
+@media screen and (min-width: 768px) {
+  .SideNav {
+    position: fixed;
+    right: 0px;
+    z-index: 1000;
+    top: 18rem;
+    width: 250px;
+  }
+
+  .wrapper-sidebar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .side-item-1 {
+    left: 200px;
+    top: 0;
+  }
+
+
+  .side-item-2 {
+    left: 200px;
+    top: 47px;
+  }
+
+  .side-item-3 {
+    left: 200px;
+    top: 94px;
+  }
+
+  .btn-sidebar-custom {
+    background-color: #1f1f1f;
+    border: none;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .border-top-left-radius {
+    border-top-left-radius: 3px;
+  }
+
+
+  .border-bottom-left-radius {
+    border-bottom-left-radius: 3px;
+
+  }
+
+
+  .Side__item {
+    width: 45px;
+    height: 45px;
+    margin-left: auto;
+    transition: all 0.5s;
+    margin: .1rem 0;
+    width: 250px;
+    position:absolute;
+    z-index: 10000000;
+  }
+
+  .Side__item:hover {
+    left: 0;
+  }
+
+  .Side__item .Side__share {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .Side__item a, .Side__item button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .Side__item a i, .Side__item button i {
+    font-size: 1.5rem;
+    width: 3rem;
+    text-align: left;
+  }
+}
+
 
 /*---------------------------------------- 2. HUỲNH QUÍ ----------------------------------------*/
 
@@ -290,6 +569,10 @@ footer .top:hover {
   }
 }
 
+
+
+
+
 @media screen and (max-width: 768px) {
   .gird .gird__list {
     display: grid;
@@ -340,6 +623,127 @@ footer .top:hover {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+
+/* navBar & carousel */
+  .navbar-brand img:first-child {
+    height: 54px;
+    width: 54px;
+  }
+  .navbar-brand img:last-child {
+    height: 23px;
+    width: 91px;
+  }
+  .header_top a:first-of-type {
+    display: none;
+  }
+  .carousel-caption--position {
+    background-color: white;
+    color: #333;
+    width: 100%;
+    bottom: -90px;
+    left: 0;
+    padding: 1rem 3rem;
+    height: 50%;
+  }
+  .carousel-caption--position h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .carousel-caption--position button {
+    width: 25%;
+  }
+  .Carousel {
+    height: 400px;
+  }
+  .carousel-item.active h1 {
+    transform: translateY(10px);
+    transition: all 1.5s;
+  }
+  .carousel-item.active .carousel-caption--position button {
+    transform: translateY(15px);
+    transition: all 2s;
+  }
+
+  /* welcome */
+
+  .Welcome__text {
+    width: 100%;
+  }
+  .Welcome__text h1 {
+    font-size: 1.85714rem;
+    line-height: 2.28571rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn--BringMe {
+    display: block;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /* SideNav */
+  .SideNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /* justify-content: flex-end; */
+    height: 60px;
+    background: #000;
+
+  }
+
+  .wrapper-sidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Side__item {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Side__item a {
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+  .Side__item span {
+    display: block;
+  }
+  .Side__item button {
+    height: 100%;
+    padding: 10px 0;
+    text-align: center!important;
+  }
+  .Side__item button span {
+    width: 100%;
+  }
+  .Side__share {
+    height: 165px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #343a40;
+    transition: all 0.5s;
+  }
+  .Side__share a {
+    text-align: center;
+  }
+  .Side__item button:hover .Side__share {
+    transform: translateY(-200px);
+    visibility: visible;
+  }
+  
 }
 
 @media screen and (max-width: 632px) {
@@ -363,131 +767,37 @@ footer .top:hover {
   }
 }
 
-/* HEADER */
-header {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.header_top {
-  font-size: 12px;
-}
-.header_top i {
-  padding: 5px;
-  border: 1px white solid;
-  font-size: x-small;
-  line-height: 5px;
-}
-.header_top a:hover i {
-  border: 1px #0088c6 solid;
-}
-/* NAVBAR */
-.navbar-brand img:first-child {
-  position: relative;
-  bottom: 10px;
-}
-.navbar-brand img:last-child {
-  margin-bottom: 10px;
-  margin-left: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .navbar-brand img:first-child {
-    height: 54px;
-    width: 54px;
+
+@media screen and (max-width: 653px) {
+  .carousel-caption--position {
+    padding: 1rem 1rem;
   }
-  .navbar-brand img:last-child {
-    height: 23px;
-    width: 91px;
-  }
-  .header_top a:first-of-type {
-    display: none;
-  }
-}
-.navbar-nav--mr a {
-  margin-right: 1rem;
-}
-/* NAVI END */
-/* CArousel */
-.carousel--overflow {
-  overflow: visible;
-}
-.carousel-caption--position {
-  text-align: left;
-  right: 10;
-  bottom: 50%;
-  left: 10%;
-  height: 45%;
-}
-/* CArousel END */
-.carousel-caption--position h1 {
-  font-size: 3.5rem;
-  font-weight: normal;
-  animation: CarouselCaption 1s 1;
-}
-.carousel-caption--position button {
-  border-radius: 0%;
-  border: black 1px solid;
-  padding: 0.5rem;
-  width: 15%;
-  animation: CarouselCaption 2s 1;
-}
-/* Carousel-Animation */
-.carousel-item.active h1 {
-  transform: translateY(20px);
-  transition: all 1.5s;
-}
-.carousel-item.active .carousel-caption--position button {
-  transform: translateY(25px);
-  transition: all 2s;
 }
 
-@keyframes CarouselCaption {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* Carousel-Animation end */
-/* REsponsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 530px) {
   .carousel-caption--position {
-    background-color: white;
-    color: #333;
-    width: 100%;
-    bottom: -90px;
-    left: 0;
-    padding: 1rem 3rem;
-    height: 50%;
+    height: 65%;
   }
+
   .carousel-caption--position h1 {
-    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .carousel-caption--position button {
-    width: 25%;
-  }
-  .Carousel {
-    height: 400px;
-  }
-  .carousel-item.active h1 {
-    transform: translateY(10px);
-    transition: all 1.5s;
-  }
-  .carousel-item.active .carousel-caption--position button {
-    transform: translateY(15px);
-    transition: all 2s;
+
+  .Search {
+    margin-top: 0;
   }
 }
+
+
 @media screen and (max-width: 625px) {
+  /* Carousel*/
+
   .carousel-caption--position {
     width: 100%;
-    bottom: -140px;
     left: 0;
     padding: 1rem 3rem;
-    height: 80%;
   }
   .carousel-caption--position h1 {
     font-size: 1.5rem;
@@ -499,10 +809,31 @@ header {
   .Carousel {
     height: 296px;
   }
+
+  .Search {
+    margin-top: 3rem;
+  }
 }
+
+
+
+
+@media screen and (max-width: 400px) {
+  .carousel-caption--position {
+    height: 70%;
+    bottom: -5rem;
+  }
+
+  .carousel-caption--position {
+    height: 80%;
+    bottom: -5rem;
+  }
+}
+
+
 @media screen and (max-width: 375px) {
   .carousel-caption--position button {
-    padding: 0rem;
+    padding: .3rem;
     width: 45%;
   }
   .carousel-caption--position {
@@ -517,180 +848,42 @@ header {
     height: 246px;
   }
 }
-/* REsponsive end*/
-/* SEARCH */
-.Search .search--container {
-  background: #141414;
-}
-.Search .search--container .search__input,
-.search__btn {
-  height: 100%;
-  border-radius: 0;
-  line-height: 2.5rem;
-  box-shadow: none;
-  background: rgb(255, 255, 255);
-}
-.search--container .search__btn:focus {
-  box-shadow: none;
-}
-.search--container .search__input:focus {
-  border: white 1px solid;
+
+/* /////////////RESPONSIVE FIX BUG */
+
+@media screen and (min-width: 769px) {
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl  {
+    width: unset;
+  }
+
+  .Search .container {
+    width: 100%!important;
+  }
+
 }
 
-/* SEARCH END */
-/* WELCOME */
-.Welcome {
-  padding: 50px 0;
-  font-size: 14px;
-}
-.Welcome__text {
-  width: 70%;
-}
-.Welcome__text h1 {
-  font-size: 34px;
-  margin-bottom: 1.5rem;
-}
-.Welcome__text .mbusa {
-  color: #0088c6;
-}
-.Welcome__text .mbusa:hover {
-  text-decoration: underline;
-}
-.Welcome__text .btn--BringMe {
-  border: none;
-  border-radius: 0;
-}
-/* responsive welcom_text */
-@media screen and (max-width: 767px) {
-  .Welcome__text {
-    width: 100%;
+@media screen and (max-width: 768px) and (min-width: 468px) {
+  footer .brand-name img {
+    width: 50%!important;
   }
-  .Welcome__text h1 {
-    font-size: 1.85714rem;
-    line-height: 2.28571rem;
-    margin-bottom: 1.5rem;
-  }
-  .btn--BringMe {
-    display: block;
-  }
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
-/* responsive welcom_text  end*/
-/* Channel */
-
-.Channel__col {
-  flex: 25%;
-
-  padding: 0.5rem;
-}
-.line {
-  position: relative;
-  overflow: hidden;
-}
-.line::before {
-  content: "";
-  width: 100%;
-  height: 8px;
-  background: #00adef;
-  position: absolute;
-  top: -8px;
-  transition: all 0.5s;
-}
-.Channel__col:hover .line::before {
-  transform: translateY(8px);
 }
 
-@media screen and (max-width: 767px) {
-  .Channel__col {
-    flex: 50%;
-  }
-}
-/* Channel end*/
-/* RightSide Nav */
-@media screen and (min-width: 768px) {
-  .SideNav {
-    position: fixed;
-    right: 0px;
-    z-index: 1000;
-  }
-  .Side__item {
-    width: 44px;
-    height: 44px;
-    margin-left: auto;
-    transition: all 0.5s;
-  }
-  .Side__item:hover {
-    width: 200px;
-  }
-  .Side__item:hover span {
-    display: inline-block;
-  }
-  .Side__item:hover .Side__share {
-    display: flex;
-    justify-content: space-evenly;
-    width: 174px;
-  }
-  .Side__item a {
-    width: 100%;
-    text-align: left;
-  }
-  .Side__item span {
-    display: none;
-  }
-}
-/* responsive for  RightSide Nav */
-@media screen and (max-width: 767px) {
-  .SideNav {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 1000;
 
-    display: flex;
-    justify-content: flex-end;
-    height: 60px;
-    background-color: #343a40;
-  }
-  .Side__item {
-    height: 100%;
-    width: 33%;
+@media screen and (max-width: 380px) {
+  .SideNav span {
+    font-size: .5rem;
   }
 
   .Side__item a {
-    width: 100%;
-    text-align: center;
-  }
-  .Side__item span {
-    display: block;
-  }
-  .Side__item button {
     height: 100%;
-    padding: 10px 0;
-    text-align: center !important;
   }
-  .Side__item button span {
-    width: 100%;
-  }
-  .Side__share {
-    height: 165px;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: #343a40;
-    transition: all 0.5s;
-  }
-  .Side__share a {
-    text-align: center;
-  }
-  .Side__item button:hover .Side__share {
-    transform: translateY(-200px);
 
-    visibility: visible;
+
+  .Side__item button  .Side__share {
+    padding-top: 1rem;
+  }
+
+  .Side__item button  .Side__share i {
+    font-size: 1.2rem;
   }
 }
-/* RightSide Nav */
