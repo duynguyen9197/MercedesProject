@@ -13,8 +13,8 @@ body {
   max-width: 1680px;
   margin: auto;
   font-size: 16px;
-  font-family: 'Bitter', serif;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: "Bitter", serif;
+  font-family: "Shippori Mincho B1", serif;
 }
 a {
   color: white;
@@ -116,7 +116,41 @@ header {
 .header_top a:hover i {
   border: 1px #0088c6 solid;
 }
+
+/* ------------responsive headertop */
+@media screen and (max-width: 767px) {
+  #showModal {
+    margin-right: 0 !important;
+  }
+  #showModal span {
+    display: none;
+  }
+}
+/* Modal body*/
+@media screen and (max-width: 1024px) {
+  #Modal--nav > div {
+    flex-direction: column;
+  }
+}
+
+#Modal--nav a {
+  color: #000;
+}
+#Modal--nav a.active {
+  color: #00adef;
+}
+#Modal-navtabContent {
+  color: #000;
+}
+
+/* End Modal body*/
+
+/* ------------responsive headertop end*/
 /* NAVBAR */
+/* thêm sticky */
+/* .navbar {
+  position: sticky;
+} */
 .navbar-brand img:first-child {
   position: relative;
   bottom: 20px;
@@ -135,13 +169,91 @@ header {
 }
 
 /* NAVI END */
+/* Vehicle content CSS */
+.arrow_vehicle {
+  font-size: xx-large;
+}
+.vehicle_container {
+  height: 500px;
+}
+@media screen and (max-width: 575px) {
+  .vehicle_container {
+    height: fit-content;
+  }
+  .Vehicle_prev,
+  .Vehicle_next {
+    display: none;
+  }
+  /* .tab-content {
+    padding: 50px;
+  } */
+}
+.Vehicle_indi {
+  bottom: -50px;
+}
+.Vehicle_indi li {
+  background-color: #000000;
+  height: 3px;
+  margin-top: 2.5rem;
+  width: 5%;
+}
 
-
-
+.Vehicle_inner h1 {
+  font-size: medium;
+  margin-top: 1rem;
+}
+.Vehicle_prev,
+.Vehicle_next {
+  height: 275px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .Vehicle_prev,
+  .Vehicle_next {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .Vehicle_prev,
+  .Vehicle_next {
+    height: 275px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .Vehicle_prev,
+  .Vehicle_next {
+    height: 240px;
+  }
+}
+.Vehicle_next {
+  justify-content: flex-start;
+}
+/* Vehicle CSS End */
 /*---------------------- 2.2 Carousel -------------------- */
 .carousel--overflow {
-  overflow: visible;
+  overflow-x: hidden;
 }
+@media screen and (max-width: 768px) {
+  .carousel--overflow {
+    height: 400px;
+  }
+  .control_edit {
+    top: 110px;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 600px) {
+  .control_edit {
+    top: 85px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .control_edit {
+    top: 60px;
+  }
+}
+
 .carousel-caption--position {
   text-align: left;
   right: 10;
@@ -167,15 +279,13 @@ header {
 
 .btn-custom {
   background-color: #333;
-
 }
 
 .btn-custom:hover {
   background-color: #000;
-  
 }
 /* Carousel-Animation */
-.carousel-item.active h1 {
+.Carousel .carousel-item.active h1 {
   transform: translateY(20px);
   transition: all 1.5s;
 }
@@ -216,7 +326,6 @@ header {
 }
 /* SEARCH END */
 
-
 /*---------------------- 2.4 WELCOME -------------------- */
 
 .Welcome {
@@ -249,9 +358,7 @@ header {
   background-color: #0088c6;
 }
 
-
 /*---------------------- 2.5 Channel -------------------- */
-
 
 .Channel__col {
   flex: 25%;
@@ -277,7 +384,6 @@ header {
 
 .Channel__col:hover .line::before {
   bottom: 0px;
-
 }
 
 @media screen and (max-width: 767px) {
@@ -286,10 +392,61 @@ header {
   }
 }
 
-
 /*---------------------- 2.6 RightSide Nav -------------------- */
+/* test */
+.dropdown-menu {
+  background-color: #1e1e1e;
+}
+.dropdown-menu a {
+  color: white;
+}
+.dropdown-menu a:hover i {
+  color: #00adef;
+  background-color: #1e1e1e !important;
+}
+@media screen and (max-width: 767px) {
+  .dropdown-menu {
+    right: 0px !important;
+  }
+}
+@media screen and (max-width: 475px) {
+  .dropdown-menu {
+    transform: translate3d(0px, -148px, 0px) !important ;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dropdown-menu {
+    padding-right: 40px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dropdown-menu {
+    padding-right: 60px !important;
+    transition: all 0.5s;
+  }
+}
+@media screen and (max-width: 425px) {
+  .dropdown-menu {
+    padding-right: 22px;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+  #btnShare {
+    display: flex;
+  }
+  .dropdown-menu {
+    display: flex;
+    left: 70px;
+    bottom: 0px !important;
+
+    border: none;
+  }
+  .dropdown-menu a {
+    padding: 0;
+  }
+
+  /* test */
   .SideNav {
     position: fixed;
     right: 0px;
@@ -307,7 +464,6 @@ header {
     left: 200px;
     top: 0;
   }
-
 
   .side-item-2 {
     left: 200px;
@@ -330,21 +486,18 @@ header {
     border-top-left-radius: 3px;
   }
 
-
   .border-bottom-left-radius {
     border-bottom-left-radius: 3px;
-
   }
-
 
   .Side__item {
     width: 45px;
     height: 45px;
     margin-left: auto;
     transition: all 0.5s;
-    margin: .1rem 0;
+    margin: 0.1rem 0;
     width: 250px;
-    position:absolute;
+    position: absolute;
     z-index: 10000000;
   }
 
@@ -359,7 +512,7 @@ header {
     margin-left: 1rem;
   }
 
-  .Side__item a, .Side__item button {
+  .Side__item a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -367,13 +520,13 @@ header {
     justify-content: flex-start;
   }
 
-  .Side__item a i, .Side__item button i {
+  .Side__item a i,
+  .Side__item button i {
     font-size: 1.5rem;
     width: 3rem;
     text-align: left;
   }
 }
-
 
 /*---------------------------------------- 2. HUỲNH QUÍ ----------------------------------------*/
 
@@ -569,10 +722,6 @@ footer .top:hover {
   }
 }
 
-
-
-
-
 @media screen and (max-width: 768px) {
   .gird .gird__list {
     display: grid;
@@ -624,7 +773,7 @@ footer .top:hover {
     padding-right: 1rem !important;
   }
 
-/* navBar & carousel */
+  /* navBar & carousel */
   .navbar-brand img:first-child {
     height: 54px;
     width: 54px;
@@ -633,9 +782,7 @@ footer .top:hover {
     height: 23px;
     width: 91px;
   }
-  .header_top a:first-of-type {
-    display: none;
-  }
+
   .carousel-caption--position {
     background-color: white;
     color: #333;
@@ -655,7 +802,7 @@ footer .top:hover {
   .Carousel {
     height: 400px;
   }
-  .carousel-item.active h1 {
+  .Carousel .carousel-item.active h1 {
     transform: translateY(10px);
     transition: all 1.5s;
   }
@@ -682,7 +829,6 @@ footer .top:hover {
     margin: 0 auto;
   }
 
-
   /* SideNav */
   .SideNav {
     position: fixed;
@@ -694,7 +840,6 @@ footer .top:hover {
     /* justify-content: flex-end; */
     height: 60px;
     background: #000;
-
   }
 
   .wrapper-sidebar {
@@ -722,7 +867,7 @@ footer .top:hover {
   .Side__item button {
     height: 100%;
     padding: 10px 0;
-    text-align: center!important;
+    text-align: center !important;
   }
   .Side__item button span {
     width: 100%;
@@ -743,7 +888,6 @@ footer .top:hover {
     transform: translateY(-200px);
     visibility: visible;
   }
-  
 }
 
 @media screen and (max-width: 632px) {
@@ -767,7 +911,6 @@ footer .top:hover {
   }
 }
 
-
 @media screen and (max-width: 653px) {
   .carousel-caption--position {
     padding: 1rem 1rem;
@@ -789,7 +932,6 @@ footer .top:hover {
     margin-top: 0;
   }
 }
-
 
 @media screen and (max-width: 625px) {
   /* Carousel*/
@@ -815,9 +957,6 @@ footer .top:hover {
   }
 }
 
-
-
-
 @media screen and (max-width: 400px) {
   .carousel-caption--position {
     height: 70%;
@@ -830,10 +969,9 @@ footer .top:hover {
   }
 }
 
-
 @media screen and (max-width: 375px) {
   .carousel-caption--position button {
-    padding: .3rem;
+    padding: 0.3rem;
     width: 45%;
   }
   .carousel-caption--position {
@@ -852,38 +990,40 @@ footer .top:hover {
 /* /////////////RESPONSIVE FIX BUG */
 
 @media screen and (min-width: 769px) {
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl  {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
     width: unset;
   }
 
   .Search .container {
-    width: 100%!important;
+    width: 100% !important;
   }
-
 }
 
 @media screen and (max-width: 768px) and (min-width: 468px) {
   footer .brand-name img {
-    width: 50%!important;
+    width: 50% !important;
   }
 }
 
-
 @media screen and (max-width: 380px) {
   .SideNav span {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 
   .Side__item a {
     height: 100%;
   }
 
-
-  .Side__item button  .Side__share {
+  .Side__item button .Side__share {
     padding-top: 1rem;
   }
 
-  .Side__item button  .Side__share i {
+  .Side__item button .Side__share i {
     font-size: 1.2rem;
   }
 }
