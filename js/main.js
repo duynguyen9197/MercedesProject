@@ -1,6 +1,9 @@
 // Xử lý show more của New
 const showMoreNew = document.querySelector(".showMoreNew");
 const hiddenPictureNew = document.querySelectorAll(".hidden-picture-new");
+const burger = document.querySelector(".navbar-toggler-icon-burger");
+const close = document.querySelector(".navbar-toggler-icon-close");
+const SideNav = document.querySelector(".SideNav");
 
 showMoreNew.addEventListener("click", (e) => {
   showMoreNew.classList.add("d-none");
@@ -50,3 +53,16 @@ document.getElementById("clickVehicle").onclick = function () {
   document.getElementById("showVehicle").style.display = "block";
   document.getElementById("Hide").style.display = "none";
 };
+
+burger.addEventListener("click", e => {
+  burger.classList.add("d-none")
+  close.classList.remove("d-none")
+  SideNav.style.right = "-10rem"
+})
+
+close.addEventListener("click", e => {
+  burger.classList.remove("d-none")
+  close.classList.add("d-none")
+  SideNav.style.right = "0"
+
+})

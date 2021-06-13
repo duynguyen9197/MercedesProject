@@ -201,16 +201,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon text-light"
+          <span class="navbar-toggler-icon navbar-toggler-icon-burger text-light"
             ><i class="fa fa-bars"></i
           ></span>
+          <span class="navbar-toggler-icon navbar-toggler-icon-close text-light d-none"
+            ><i class="fas fa-times"></i></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end text-center"
           id="myNAV"
         >
           <div
-            class="navbar-nav navbar-nav--mr"
+            class="navbar-nav navbar-nav--mr navbar-nav-responsive "
             class="nav nav-tabs"
             id="nav-tab"
             role="tablist"
@@ -235,9 +237,10 @@
             <a class="nav-item nav-link" href="#">Sports</a>
             <a class="nav-item nav-link" href="#">Events</a>
             <a class="nav-item nav-link" href="#">Lifestyle</a>
+            <a class="nav-item nav-link navlink-search" href="#"><i class="fa fa-search mr-3"></i> Search</a>
           </div>
         </div>
-        <a href="#SEARCH_forcus"
+        <a class="search-icon-responsive" href="#SEARCH_forcus"
           ><span class="navbar-text search-icon">
             <i class="fa fa-search"></i></span
         ></a>
